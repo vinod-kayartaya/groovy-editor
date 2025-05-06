@@ -25,6 +25,17 @@ numbers.each { num ->
     println "Number: $num"
 }`);
 
+// Handle Clear button click
+const clearButton = document.getElementById('clearButton');
+if (clearButton) {
+  clearButton.addEventListener('click', () => {
+    editor.setValue('');
+    document.getElementById('output').textContent = '';
+    editor.setCursor(0, 0);
+    editor.focus();
+  });
+}
+
 // Handle Run button click
 document.getElementById('runButton').addEventListener('click', async () => {
   const code = editor.getValue();

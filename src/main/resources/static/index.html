@@ -3,7 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groovy Editor</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Online Groovy Editor - Write, Run, and Master Groovy Code</title>
+    <meta name="title" content="Online Groovy Editor - Write, Run, and Master Groovy Code">
+    <meta name="description" content="Free online Groovy editor with syntax highlighting, code execution, and real-time output. Perfect for learning, testing, and running Groovy code in your browser.">
+    <meta name="keywords" content="groovy editor, online groovy compiler, groovy playground, groovy code runner, groovy programming, code editor">
+    <meta name="author" content="Vinod Kumar Kayartaya">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://groovy-editor.vinod.co/">
+    <meta property="og:title" content="Online Groovy Editor - Write, Run, and Master Groovy Code">
+    <meta property="og:description" content="Free online Groovy editor with syntax highlighting, code execution, and real-time output. Perfect for learning, testing, and running Groovy code in your browser.">
+    <meta property="og:image" content="https://groovy-editor.vinod.co/img/groovy-editor.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://groovy-editor.vinod.co/">
+    <meta property="twitter:title" content="Online Groovy Editor - Write, Run, and Master Groovy Code">
+    <meta property="twitter:description" content="Free online Groovy editor with syntax highlighting, code execution, and real-time output. Perfect for learning, testing, and running Groovy code in your browser.">
+    <meta property="twitter:image" content="https://groovy-editor.vinod.co/img/groovy-editor.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,9 +39,12 @@
         <header>
             <div class="header-content">
                 <h1>Online Groovy Editor</h1>
-                <p class="subtitle">Write, Run, and Master Groovy - Created by <a href="https://vinod.co" target="_blank">Vinod Kumar Kayartaya</a></p>
+                <p class="subtitle">Write, Run, and Master Groovy <br/> Created by <a href="https://vinod.co" target="_blank">Vinod Kumar Kayartaya</a></p>
             </div>
-            <button id="runButton">Run Code</button>
+            <div class="button-group">
+                <button id="clearButton" class="secondary-button">Clear</button>
+                <button id="runButton">Run Code</button>
+            </div>
         </header>
         <div class="editor-output-container">
             <div class="editor-container">
